@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 4755b35b590504809a7525fd2109c2e2
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerTestingScene.unity
+    guid: 7327dfe8ccd55ba438fd91b22422783e
   m_configObjects:
     AR Foundation RemoteARFoundationRemoteLoaderSettings: {fileID: 11400000, guid: fe8cdc2901310b841ab530ab63c5d457,
       type: 2}
