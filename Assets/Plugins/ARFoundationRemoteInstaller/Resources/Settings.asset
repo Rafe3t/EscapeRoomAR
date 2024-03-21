@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd607c3f010ab45a29ecfcf8d5a898ef, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: 
-  ARCompanionAppIP: 192.168.143.22
+  ARCompanionAppIP: 192.168.1.150
   arCompanionSettings:
     cameraVideoSettings:
       enableVideo: 1
@@ -57,10 +57,10 @@ MonoBehaviour:
     version: 14.0.10
     id: com.unity.render-pipelines.universal
   inputHandlingData:
-    isLegacyInputManagerEnabled: 0
+    isLegacyInputManagerEnabled: 1
     isNewInputSystemEnabled: 1
   debugSettings:
-    logStartupErrors: 1
+    logStartupErrors: 0
     showTelepathyLogs: 0
     showTelepathyWarningsAndErrors: 1
     printCompanionAppIPsToConsole: 0

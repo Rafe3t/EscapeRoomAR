@@ -18,5 +18,9 @@ MonoBehaviour:
   logWarnings: 0
   timeScale: 1
   targetFps: -2
-  sceneToRecordAssociations: []
+  sceneToRecordAssociations:
+  - name: SampleScene
+    scene: {fileID: 102900000, guid: 4755b35b590504809a7525fd2109c2e2, type: 3}
+    records:
+    - {fileID: 11400000, guid: c7b4a628a58dd42499ba766ae5770835, type: 2}
   isRecording: 0
