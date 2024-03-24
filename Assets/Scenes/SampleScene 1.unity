@@ -734,7 +734,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 436358033}
   cam: {fileID: 1695545083}
-  distanceFromCamera: 2
+  distanceFromCamera: 0.5
+  theLockInspectorPrefab: {fileID: 1713975947014844099, guid: d4261da02075c37438c0bd17a0a3f143,
+    type: 3}
   surfaces: []
   facingUpSurfaces: []
   objectsToSpawn:

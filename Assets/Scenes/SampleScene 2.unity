@@ -615,6 +615,11 @@ MonoBehaviour:
   distanceFromCamera: 0.5
   theLockInspectorPrefab: {fileID: 1713975947014844099, guid: d4261da02075c37438c0bd17a0a3f143,
     type: 3}
+  surfaces: []
+  facingUpSurfaces: []
+  objectsToSpawn:
+  - {fileID: 6015541130312604615, guid: 69f22a8f80cd5d84ca7cb4b42932c477, type: 3}
+  - {fileID: 1095397727560605738, guid: 1868c783231c00e4b91acf8a7353ede2, type: 3}
 --- !u!4 &1695545083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2512387469002778308, guid: 48cb3fb68c91eb94999fd99957eb0cae,
