@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class GameManager : MonoBehaviour
 {
-
     public ObjectSpawner spawner;
     public Transform cam;
     public float distanceFromCamera;
@@ -15,13 +15,16 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> facingUpSurfaces;
     [SerializeField]
-    private GameObject objectToSpawn; 
+    private GameObject[] objectsToSpawn; 
+    private int currentObjectToSpawn = 0;
+    private int lockKeyCode = 0; 
     // Start is called before the first frame update
     void Start()
     {
         // puzzel and clues will start after scanning the room
         //Invoke("GetUsableSurfaces", 20f);
         Invoke("SpawnObject",10f);
+        Invoke("SpawnObject",11f);
     }
 
     // Update is called once per frame
@@ -66,7 +69,11 @@ public class GameManager : MonoBehaviour
     }
     private void SpawnObject(){
         GetUsableSurfaces();
-        Instantiate(objectToSpawn,PickRandomSurface(),quaternion.identity);
+        Instantiate(objectsToSpawn[currentObjectToSpawn],PickRandomSurface(),quaternion.identity);
+        if(currentObjectToSpawn == 1){
+            lockKeyCode = int.Parse(GenerateFiveDigitNumber());
+        }
+        currentObjectToSpawn++;
         Debug.Log("random surface: " + PickRandomSurface());
     }
 
@@ -86,6 +93,14 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    string GenerateFiveDigitNumber()
+    {
+        int randomNumber = UnityEngine.Random.Range(10000, 99999); // Generate a random 5-digit number
+        GameObject.Find("LockCode").GetComponent<TextMeshProUGUI>().text = randomNumber.ToString();
+        return randomNumber.ToString(); // Convert the number to a string and return it
+        
     }
     
 }

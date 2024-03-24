@@ -200,7 +200,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -737,8 +737,9 @@ MonoBehaviour:
   distanceFromCamera: 2
   surfaces: []
   facingUpSurfaces: []
-  objectToSpawn: {fileID: 8986328500875594450, guid: 88d8fefe52870e843836fcd94766ee4f,
-    type: 3}
+  objectsToSpawn:
+  - {fileID: 8986328500875594450, guid: 88d8fefe52870e843836fcd94766ee4f, type: 3}
+  - {fileID: 1095397727560605738, guid: 1868c783231c00e4b91acf8a7353ede2, type: 3}
 --- !u!4 &1695545083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2512387469002778308, guid: 48cb3fb68c91eb94999fd99957eb0cae,
