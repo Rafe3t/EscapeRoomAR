@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public ObjectSpawner spawner;
     public Transform cam;
     public float distanceFromCamera;
+    private GameObject theLockInspector;
+    public GameObject theLockInspectorPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +22,18 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKeyDown("r"))
         {
-            Vector3 pos = cam.position + cam.forward.normalized * distanceFromCamera;
-            spawner.TrySpawnObject(pos, cam.forward);
+            if(theLockInspector == null)
+            {
+                //instantiate lock
+                theLockInspector = Instantiate(theLockInspectorPrefab, cam);
+                theLockInspector.transform.localPosition = new Vector3(0, 0, distanceFromCamera);
+            }
+            else
+            {
+                //destroy it
+                Destroy(theLockInspector);
+            }
+            
         }
     }
 }

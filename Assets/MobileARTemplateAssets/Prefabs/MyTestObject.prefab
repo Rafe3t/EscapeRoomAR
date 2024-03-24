@@ -30,12 +30,27 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 2996392715678626154, guid: ebd7292e888c84f05924605e51048072,
         type: 3}
+      propertyPath: m_TrackScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996392715678626154, guid: ebd7292e888c84f05924605e51048072,
+        type: 3}
       propertyPath: m_MovementType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2996392715678626154, guid: ebd7292e888c84f05924605e51048072,
         type: 3}
       propertyPath: m_ThrowOnDetach
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996392715678626154, guid: ebd7292e888c84f05924605e51048072,
+        type: 3}
+      propertyPath: m_TrackPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996392715678626154, guid: ebd7292e888c84f05924605e51048072,
+        type: 3}
+      propertyPath: m_TrackRotation
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2996392715678626154, guid: ebd7292e888c84f05924605e51048072,
@@ -106,12 +121,12 @@ PrefabInstance:
     - target: {fileID: 4719697340578916628, guid: ebd7292e888c84f05924605e51048072,
         type: 3}
       propertyPath: m_Constraints
-      value: 94
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4719697340578916628, guid: ebd7292e888c84f05924605e51048072,
         type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6039300071078109978, guid: ebd7292e888c84f05924605e51048072,
         type: 3}
